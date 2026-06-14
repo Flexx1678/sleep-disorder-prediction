@@ -10,6 +10,9 @@ pinned: false
 ---
 
 # 😴 Prediksi Gangguan Tidur Berdasarkan Gaya Hidup
+<p align="center">
+  <img src="images/thumbnail.png" width="800">
+</p>
 
 ## 📌 Project Overview
 Proyek ini bertujuan memprediksi jenis gangguan tidur seseorang (None / Insomnia / Sleep Apnea) berdasarkan data gaya hidup dan kondisi kesehatan menggunakan algoritma machine learning dengan metodologi **CRISP-DM**.
