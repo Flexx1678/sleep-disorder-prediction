@@ -1,17 +1,6 @@
----
-title: Sleep Disorder Predictor
-emoji: 😴
-colorFrom: green
-colorTo: blue
-sdk: streamlit
-sdk_version: 1.35.0
-app_file: app.py
-pinned: false
----
-
 # 😴 Prediksi Gangguan Tidur Berdasarkan Gaya Hidup
 <p align="center">
-  <img src="images/thumbnail.png" width="800">
+  <img src="images/thumbnail.png" width="400">
 </p>
 
 ## 📌 Project Overview
