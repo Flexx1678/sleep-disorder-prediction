@@ -15,7 +15,7 @@ Proyek ini bertujuan memprediksi jenis gangguan tidur seseorang (None / Insomnia
 | Nama | NIM |
 |------|-----|
 | [Fauzan Yaafi] | [2330511068] |
-| [M Syaqiran NF] | [2330511091] |
+| [M Syaqiran Nur Fadlillah] | [2330511091] |
 
 ---
 
