@@ -31,7 +31,35 @@ Proyek ini bertujuan memprediksi jenis gangguan tidur seseorang (None / Insomnia
 
 ---
 
-## 1. Business Understanding
+## 1. Metodologi CRISP-DM
+
+Proyek ini dikembangkan menggunakan metodologi **CRISP-DM (Cross Industry Standard Process for Data Mining)** yang terdiri dari enam tahapan utama:
+
+1. **Business Understanding**
+   - Memahami permasalahan gangguan tidur dan menentukan tujuan prediksi.
+
+2. **Data Understanding**
+   - Mengumpulkan dan menganalisis dataset Sleep Health and Lifestyle untuk memahami karakteristik data.
+
+3. **Data Preparation**
+   - Membersihkan data, menangani missing value, melakukan encoding, serta menyiapkan data untuk proses pelatihan model.
+
+4. **Modeling**
+   - Melatih model machine learning menggunakan algoritma Random Forest dan Gradient Boosting.
+
+5. **Evaluation**
+   - Mengevaluasi performa model menggunakan metrik Accuracy, Precision, Recall, dan F1-Score.
+
+6. **Deployment**
+   - Mengimplementasikan model terbaik ke dalam aplikasi web menggunakan Streamlit dan Hugging Face Spaces.
+
+<p align="center">
+  <img src="images/crispdm.png" width="500">
+  <br>
+  <em>Gambar 1. Tahapan Metodologi CRISP-DM</em>
+</p>
+
+## 2. Business Understanding
 
 ### Latar Belakang
 Gangguan tidur seperti insomnia dan sleep apnea semakin umum di masyarakat modern. Kondisi ini berkaitan erat dengan gaya hidup seperti tingkat stres, aktivitas fisik, dan pola tidur. Deteksi dini dapat membantu seseorang segera mencari penanganan yang tepat sebelum berdampak lebih serius pada kesehatan.
@@ -51,7 +79,7 @@ Gangguan tidur seperti insomnia dan sleep apnea semakin umum di masyarakat moder
 
 ---
 
-## 2. Data Understanding
+## 3. Data Understanding
 
 ### Sumber Data
 - **Dataset:** [Sleep Health and Lifestyle Dataset - Kaggle](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset)
@@ -99,7 +127,7 @@ Gangguan tidur seperti insomnia dan sleep apnea semakin umum di masyarakat moder
 
 ---
 
-## 3. Data Preparation
+## 4. Data Preparation
 
 1. **Drop kolom tidak relevan:** `Person ID`
 2. **Handle missing values:** NaN pada `Sleep Disorder` diisi dengan `None` (tidak ada gangguan)
@@ -127,7 +155,31 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 ---
 
-## 4. Modeling
+## 5. Algoritma yang Digunakan
+
+Pada penelitian ini digunakan dua algoritma machine learning untuk melakukan klasifikasi gangguan tidur.
+
+### Random Forest Classifier
+
+Random Forest merupakan algoritma ensemble yang menggabungkan banyak decision tree untuk menghasilkan prediksi yang lebih stabil dan akurat. Setiap pohon keputusan memberikan prediksi, kemudian hasil mayoritas digunakan sebagai prediksi akhir.
+
+**Kelebihan:**
+- Mampu menangani data dengan baik
+- Mengurangi risiko overfitting
+- Memberikan feature importance
+
+### Gradient Boosting Classifier
+
+Gradient Boosting merupakan algoritma ensemble yang membangun model secara bertahap dengan memperbaiki kesalahan model sebelumnya.
+
+**Kelebihan:**
+- Akurasi tinggi
+- Mampu menangkap pola yang kompleks
+- Cocok untuk data klasifikasi
+
+Kedua algoritma dibandingkan untuk menentukan model dengan performa terbaik pada dataset Sleep Health and Lifestyle.
+
+## 6. Modeling
 
 ### Model 1: Random Forest Classifier
 
@@ -154,7 +206,7 @@ gb_model.fit(X_train, y_train)
 
 ---
 
-## 5. Evaluation
+## 7. Evaluation
 
 ### Hasil Perbandingan Model
 | Model | Accuracy | Precision (avg) | Recall (avg) | F1-Score (avg) |
@@ -201,7 +253,7 @@ Mean Accuracy : 0.7409 ± 0.1459
 ```
 
 
-## 6. Deployment
+## 8. Deployment
 
 Model di-deploy di **Hugging Face Spaces**.
 
