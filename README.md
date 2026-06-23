@@ -4,7 +4,7 @@
 </p>
 
 ## 📌 Project Overview
-Proyek ini bertujuan memprediksi jenis gangguan tidur seseorang (None / Insomnia / Sleep Apnea) berdasarkan data gaya hidup dan kondisi kesehatan menggunakan algoritma machine learning dengan metodologi **CRISP-DM**.
+Proyek ini bertujuan memprediksi jenis gangguan tidur seseorang berdasarkan data gaya hidup dan kondisi kesehatan menggunakan algoritma machine learning dengan metodologi **CRISP-DM**.
 
 🔗 **Live Demo:** [Link Live Demo](https://huggingface.co/spaces/FauzanYaafi123/SleepHealth)
 📓 **Notebook:** [Link Notebook](https://colab.research.google.com/drive/1eBac_9o-Z-2tAuP9z_bW8S1bnw86OpAo?usp=sharing)
